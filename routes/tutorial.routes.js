@@ -4,7 +4,7 @@ module.exports = app=>{
     var router = require('express').Router();
     router.post('/',tutorials.create);
     router.put("/:id",tutorials.update)
-    router.get("/:id",tutorials.findAll)
+    router.get("/all",tutorials.findAll)
     app.use('/api/adel/fetouni',router)
 }
 
